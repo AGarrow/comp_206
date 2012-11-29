@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head>
+	<link rel="Stylesheet" href="basic.css" type="text/css" />
+	<title>Online Store - Logged in</title>
+</head>
+
+<body>
+
+<div id="container2">
+
+<!-- Content within container -->
+
+
+<div id="header">
+
+   <div id="title">
+      <div style="margin-right:15px;">
+	  <p align="right"><font face="arial" size="-2">Welcome USERNAME - <a href="index.html"><b>Log out</b></a></font></p>
+	  </div>
+	  <h1 style="color:#c30">Online Store</h1>
+	  <div style="margin-top:-10px;">Books. Textbooks. eBooks. More</div>
+      <h2>Welcome</h2>
+  
+   </div>
+
+   <ul id="nav">
+      <li><a href="books.html">Books</a></li>
+      <li><a href="">Textbooks</a></li>
+      <li><a href="">eBooks</a></li>
+      <li><a href="">Teen</a></li>
+	  <li><a href="">Kids</a></li>
+   </ul>
+
+</div>
+	
+	<div id="tut">
+	 
+	 Please select books from the table of currently available
+     books.  Each book is displayed with a description and cost.  On the right side you can
+     select the quantity of books you would like to purchase.  Leaving the number at zero to
+     indicate that you do not want that book.  Enjoy!
+	 
+	 <!-- Will update the table with other titles -->
+	 
+	 <div style="padding-top: 25px;">
+		<form action="bill.py" method="POST">
+            <table>
+                <thead>
+                    <tr style="background-color: #CCCCCC">
+                        <th>Title</th>
+						<th>Author</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Algebra</td>
+                        <td>Michael Artin</td>
+						<td>Group Theory, Ring Theory, Introduction to Galois Theory</td>
+                        <td>100.00</td>
+                        <td><input type="text" name="algebra" value="0" /></td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Analysis</td>
+                        <td>Ruding</td>
+						<td>Sequences and Series, Differentiation, Integration</td>
+                        <td>90.00</td>
+                        <td><input type="text" name="analysis" value="0" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: right">
+                <input type="submit" value="Purchase!" name="submit" />
+            </div>
+        </form>
+	 </div>
+	 </div>
+
+<p align="center"><font face="arial" size="-2">Online Store &copy; 2012</font></p>
+</div>	 
+	 
+	 
+
+
+</body>
+
+</html>
+
