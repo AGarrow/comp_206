@@ -16,7 +16,8 @@ Before logging in:
 After logging in:
 
 - welcome.html: main page. User will select different categories that will lead to other pages
-- Coming up
+- books.html
+- Other categories can be duplicated from books.html 
 
 
 Notes: 
